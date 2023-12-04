@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congrats on breaking out</title>
+</head>
+<body>
+    <h1>Great work! You've freed yourself!!</h1>
+    <h4>Please enter your details to stay updated</h4>
+    <form action="connect.php" method="post">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Name" name="username"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="m">Male
+                    <input type="radio" name="gender" value="f">Female
+                    <input type="radio" name="gender" value="nd">Cannot specify
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="mail" placeholder="Email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td>
+                    <select name="code">
+                        <option selected hidden value="">Select code</option>
+                        <option value="+91">+91</option>
+                        <option value="+61">+61</option>
+                        <option value="+32">+32</option>
+                        <option value="+44">+44</option>
+                        <option value="+1">+1</option>
+                    </select>
+                    <input type="Phone" placeholder="933*******" name="Phone">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" name=""></td>
+            </tr>
+        </table>    
+    </form>
+</body>
+</html>

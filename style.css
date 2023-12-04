@@ -1,0 +1,67 @@
+body{
+    margin: 0;/*to have no borders*/
+    padding: 0;/*to have no borders*/
+    background: black;
+    width: 100%;/*to make it occupy the whole page*/
+    height: 100%/*to make it occupy the whole page*/
+}
+
+#room{ /*since we're using a tag we need to use #*/
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 1440px;/*16:10 aspect ratio*/
+    height: 900px;/*16:10 aspect ratio*/
+    background-image: url("room.png")
+}
+
+#room >*{ /*since all the elements are a subset of room div*/
+    margin: 0;
+    padding: 0;
+    position: absolute;/*needs to be in the same place when mini and max*/
+}
+#door{
+    position: absolute;
+    top: 157px;
+    left: 118px;
+}
+
+#table{
+    position: absolute;
+    top: 281px;/*aligning the elements*/
+    left: 517px;/*aligning the elements*/
+    max-width: 50%;
+    max-height: 50%; 
+}
+#lock{
+    position: absolute;
+    top: 359px;
+    left: 318px;
+    width: 90px;
+}
+#knob{
+    position: absolute;
+    top: 376px;
+    left: 230px;
+}
+#key{
+    position: absolute;
+    top: 780px;
+    left: 1306px;
+    transform: rotate(80deg);
+    visibility: hidden;
+}
+#escape{
+    position: absolute;
+    top: 905px;
+    left: 0px;
+    width: 200px;
+    height: 45px;
+    visibility: hidden;
+}
+p{
+    color: black;
+}
+h1{
+    font-weight: bold;
+}
